@@ -1,31 +1,15 @@
-# Flask Web Framework
 flask==2.3.3
-gunicorn==21.2.0
-
-# LangChain Core - STABLE VERSION 0.3.10
 langchain==0.3.10
 langchain-community==0.3.10
 langchain-core==0.3.25
 langchain-text-splitters==0.3.2
-
-# Vector Store Integration - FIXED VERSION for Python 3.13
 langchain-pinecone==0.2.13
 pinecone==7.3.0
-
-# LLM Integrations
 langchain-huggingface==0.1.2
-
-# Embeddings & Models
 sentence-transformers==5.1.2
 transformers==4.57.1
 huggingface-hub==0.36.0
-
-# PyTorch - CPU version for deployment
 torch==2.5.1
-torchvision==0.20.1
-torchaudio==2.5.1
-
-# Utilities
+gunicorn==21.2.0
 python-dotenv==1.2.1
 requests==2.32.5
-pypdf==3.17.1
