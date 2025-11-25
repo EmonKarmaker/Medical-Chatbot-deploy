@@ -1,0 +1,31 @@
+# Flask Web Framework
+flask==2.3.3
+
+# LangChain Core - STABLE VERSION 0.3.10 (works with all imports)
+langchain==0.3.10
+langchain-community==0.3.10
+langchain-core==0.3.25
+langchain-text-splitters==0.3.2
+
+# Vector Store Integration
+langchain-pinecone==0.2.0
+pinecone==7.3.0
+
+# LLM Integrations
+langchain-huggingface==0.1.2
+
+# Embeddings & Models
+sentence-transformers==5.1.2
+transformers==4.57.1
+huggingface-hub==0.36.0
+
+# PyTorch (keep your version)
+torch==2.9.1
+
+# Utilities
+python-dotenv==1.2.1
+requests==2.32.5
+
+# Optional: Add these if needed
+# pypdf==3.17.1  # For PDF loading
+# gradio==3.43.0  # If using Gradio UI
