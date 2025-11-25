@@ -5,10 +5,10 @@ langchain-core==0.3.63
 langchain-text-splitters==0.3.8
 langchain-pinecone==0.2.13
 pinecone-client==2.2.4
-sentence-transformers==5.1.2
+sentence-transformers==2.2.2
 python-dotenv==1.2.1
 requests==2.32.5
-huggingface-hub==0.36.0
-transformers==4.57.1
-torch==2.0.1
+huggingface-hub==0.20.3
+transformers==4.36.2
+torch==2.1.2
 gunicorn==21.2.0
