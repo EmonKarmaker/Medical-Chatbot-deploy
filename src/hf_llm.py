@@ -1,25 +1,23 @@
-from langchain_community.llms import HuggingFaceHub
+from langchain_huggingface import HuggingFaceEndpoint
 import os
 
 def get_hf_llm():
     """
-    Initialize Hugging Face LLM for medical chatbot
+    Initialize Hugging Face Inference API for medical chatbot
+    Using a free, fast model
     """
-    # Using a good medical-focused model that's free
+    # Using a good medical model that's available for free
     repo_id = "microsoft/DialoGPT-medium"  # Good for conversations
     
-    llm = HuggingFaceHub(
+    llm = HuggingFaceEndpoint(
         repo_id=repo_id,
+        task="text-generation",
+        huggingfacehub_api_token=os.getenv('HUGGINGFACEHUB_API_TOKEN'),
         model_kwargs={
-            "temperature": 0.3,  # Lower for more focused medical responses
+            "temperature": 0.3,
             "max_new_tokens": 500,
-            "do_sample": True,
-            "top_p": 0.95
-        },
-        huggingfacehub_api_token=os.getenv('HUGGINGFACEHUB_API_TOKEN')
+            "do_sample": True
+        }
     )
     
     return llm
-
-# Alternative medical-focused model (uncomment if you want to try):
-# "microsoft/BioGPT-Large" - specifically trained on biomedical literature
