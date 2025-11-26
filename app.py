@@ -4,7 +4,7 @@ from langchain_pinecone import PineconeVectorStore
 from src.hf_llm import get_hf_llm
 # ✅ CORRECT IMPORTS FOR LANGCHAIN 0.3.10
 from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain.chains import RetrievalQA
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 import os
