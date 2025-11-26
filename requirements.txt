@@ -1,7 +1,7 @@
 flask==2.3.3
 langchain==0.1.14
 langchain-community==0.0.29
-langchain-core==0.1.33
+langchain-core==0.1.37
 langchain-text-splitters==0.0.1
 pinecone-client==2.2.4
 sentence-transformers==2.2.2
